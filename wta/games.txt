@@ -1,0 +1,37 @@
+3jul nm50 w:diane l:doug
+3jul mp15 w:monte l:jay
+3jul mp15team l:james w:chris l:dusty w:josh
+3jul bb25 w:james l:dusty
+3jul oc25 w:james l:dusty
+
+30jun bb50 w:James l:Josh
+30jun nm50 w:James l:Josh
+30jun mp15 w:James l:Josh
+30jun mp15 w:James l:Josh
+
+26jun mp15 w:Diane l:Jay
+26jun oc15 w:Diane l:Jay
+26jun kh15 w:Steve l:Jay
+26jun mp15 w:Steve l:Jay
+26jun en50 w:Chris l:Chad
+26jun en35 w:Chris l:Chad
+26jun xx25 w:Monte l:Dusty
+26jun fc15 w:Josh l:Dusty
+26jun mp15 w:Dusty l:Josh
+26jun fc35team w:Steve w:James l:Maz l:Phillip
+
+24jun wg35 w:Jen l:Steve
+24jun en50 w:James l:Josh
+
+23jun bb35 w:Steve l:Chris
+
+22jun en50 w:James l:Josh
+
+19jun xx35team w:Steve w:Jen l:Maz l:Dusty
+19jun kh35team w:Jay w:Chad l:Monte l:Doug
+19jun kh35team w:chris w:diane l:mike l:james
+12jun xx15 w:dusty l:josh
+12jun fc35 w:josh l:james
+12jun mp35team w:james l:chris l:monte l:jay
+12jun xx50 l:doug w:steve
+12jun bb50 w:steve l:philip
