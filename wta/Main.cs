@@ -37,8 +37,15 @@ namespace wta
 
 		public static void Main ( string[] args )
 		{
-			LoadGames( "../../Data/games.txt" );
-			ReportScores();
+			try
+			{
+				LoadGames( args[0] );
+				ReportScores();
+			}
+			catch ( IndexOutOfRangeException )
+			{
+				Console.WriteLine( "Please specify the game data file on the command line" );
+			}
 		}
 	}
 }
