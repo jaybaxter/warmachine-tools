@@ -37,7 +37,7 @@ namespace wta
 
 		public static void Main ( string[] args )
 		{
-			LoadGames( "../../games.txt" );
+			LoadGames( "../../Data/games.txt" );
 			ReportScores();
 		}
 	}
