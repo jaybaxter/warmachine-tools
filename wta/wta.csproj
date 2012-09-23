@@ -21,7 +21,7 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
     <ConsolePause>false</ConsolePause>
-    <Commandlineparameters>../../Data/games.txt</Commandlineparameters>
+    <Commandlineparameters>../../Data/olgunholt.txt</Commandlineparameters>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>none</DebugType>
@@ -46,6 +46,7 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <None Include="Data\games.txt" />
+    <None Include="Data\olgunholt.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
