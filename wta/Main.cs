@@ -42,9 +42,9 @@ namespace wta
 				LoadGames( args[0] );
 				ReportScores();
 			}
-			catch ( IndexOutOfRangeException )
+			catch ( IndexOutOfRangeException ex )
 			{
-				Console.WriteLine( "Please specify the game data file on the command line" );
+				Console.WriteLine( "Please specify the game data file on the command line: ", ex.Message );
 			}
 		}
 	}
