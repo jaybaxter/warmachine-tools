@@ -122,6 +122,12 @@ namespace wta
 			Add( "No-Man's Land 25", "nm25", 2, 1 );
 			Add( "No-Man's Land 35", "nm35", 2, 1 );
 			Add( "No-Man's Land 50", "nm50", 3, 1 );
+
+			// Onslaught
+			Add( "Onslaught 15", "on15", 2, 1 );
+			Add( "Onslaught 25", "on25", 2, 1 );
+			Add( "Onslaught 35", "on35", 2, 1 );
+			Add( "Onslaught 50", "on50", 3, 1 );
 		}
 
 		public static Scenario Find (string handle)
