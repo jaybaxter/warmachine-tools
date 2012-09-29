@@ -63,6 +63,14 @@ namespace wta
 				winner.addWin( this );
 			foreach ( var loser in losers )
 				loser.addLoss( this );
+
+			if ( Alliance.allied( winners ) )
+				foreach ( var player in winners )
+					player.addAllyPoint();
+			
+			if ( Alliance.allied( losers ) )
+				foreach ( var player in losers )
+					player.addAllyPoint();
 		}
 
 		private bool scored;
@@ -91,12 +99,14 @@ namespace wta
 		public override string ToString ()
 		{
 			var winnersWithPoints = new List<string>();
-			foreach ( var winner in winners )
-				winnersWithPoints.Add( String.Format( "{0}({1})", winner.name, scenario.winPoints ) );
+			foreach ( var player in winners )
+				winnersWithPoints.Add( 
+					String.Format( "{0}({1}{2})", player.name, scenario.winPoints, Alliance.allied( winners ) ? "+ally" : "" ) );
 
 			var losersWithPoints = new List<string>();
-			foreach ( var loser in losers )
-				losersWithPoints.Add( String.Format( "{0}({1})", loser.name, scenario.losePoints ) );
+			foreach ( var player in losers )
+				losersWithPoints.Add( 
+					String.Format( "{0}({1}{2})", player.name, scenario.losePoints, Alliance.allied( losers ) ? "+ally" : "" ) );
 
 			return 
 				string.Format(

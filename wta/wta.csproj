@@ -21,7 +21,7 @@
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
     <ConsolePause>False</ConsolePause>
-    <Commandlineparameters>../../Data/olgunholt.txt</Commandlineparameters>
+    <Commandlineparameters>../../Data/olgunholt/games.txt</Commandlineparameters>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <DebugType>none</DebugType>
@@ -42,13 +42,19 @@
     <Compile Include="Scenario.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Player.cs" />
+    <Compile Include="Alliance.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <None Include="Data\olgunholt.txt" />
-    <None Include="Data\gnarls.txt" />
+    <Folder Include="Data\" />
+    <Folder Include="Data\gnarls\" />
+    <Folder Include="Data\olgunholt\" />
+    <Folder Include="Data\thornwood\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
+    <None Include="Data\gnarls\games.txt" />
+    <None Include="Data\olgunholt\games.txt" />
+    <None Include="Data\olgunholt\players.txt" />
+    <None Include="Data\olgunholt\alliances.txt" />
   </ItemGroup>
 </Project>

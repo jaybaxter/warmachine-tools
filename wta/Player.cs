@@ -11,6 +11,13 @@ namespace wta
 			games = new List<Game>();
 		}
 
+		public static void add ( string name, Faction faction )
+		{
+			var player = find ( name );
+			if ( player != null )
+				player.faction = faction;
+		}
+
 		public void addWin ( Game game )
 		{
 			wins++;
@@ -29,9 +36,15 @@ namespace wta
 				teamGames++;
 		}
 
-		public string name { get; private set; }
+		public void addAllyPoint ()
+		{
+			allyPoints += 1;
+		}
 
+		public string name { get; private set; }
+		public Faction faction { get; set; }
 		public int points { get; private set; }
+		public int allyPoints { get; private set; }
 
 		public int wins { get; private set; }
 		public int losses { get; private set; }
@@ -52,7 +65,8 @@ namespace wta
 			return player;
 		}
 
-		public static Dictionary<string, Player> All = new Dictionary<string, Player>();
+		public static Dictionary<string, Player> All = 
+			new Dictionary<string, Player>();
 	}
 }
 
