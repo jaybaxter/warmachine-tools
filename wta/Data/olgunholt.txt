@@ -8,7 +8,7 @@
 11sep xx15 w:chris l:jackie
 11sep kh15 w:chris l:josh
 11sep xx35 w:chad l:maz
-18sep kh15team w:chris w:steve l:doug l:jackie
+18sep kh15team l:chris l:steve w:doug w:jackie
 18sep kh35 w:chris l:jackie
 18sep xx50 w:chad l:monte
 18sep mp25team w:james w:phillip l:maz l:josh
